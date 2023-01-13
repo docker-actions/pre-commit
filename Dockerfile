@@ -2,7 +2,7 @@ ARG ROOTFS=/build/rootfs
 
 FROM ubuntu:jammy as build
 
-ARG REQUIRED_PACKAGES="sed git less ncurses-base"
+ARG REQUIRED_PACKAGES="sed git less ncurses-base openssh-client"
 ARG VERSION=2.20.0
 ARG ROOTFS
 
