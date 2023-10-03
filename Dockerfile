@@ -2,8 +2,8 @@ ARG ROOTFS=/build/rootfs
 
 FROM ubuntu:jammy as build
 
-ARG REQUIRED_PACKAGES="sed git less ncurses-base openssh-client"
-ARG VERSION=2.20.0
+ARG REQUIRED_PACKAGES="sed git less ncurses-base openssh-client gcc python3-dev"
+ARG VERSION=3.4.0
 ARG ROOTFS
 
 ENV BUILD_DEBS /build/debs
